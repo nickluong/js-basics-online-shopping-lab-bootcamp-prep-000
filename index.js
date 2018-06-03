@@ -34,7 +34,7 @@ function viewCart() {
     return line;
   } else {
   	for (let i = 0; i < cart.length - 1; i++) {
-    string += `${cart[i].itemName} at $${cart[i].itemPrice}, `;
+    line += `${cart[i].itemName} at $${cart[i].itemPrice}, `;
     }
   } 
   return line + `and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`;
